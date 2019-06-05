@@ -1,0 +1,17 @@
+server:
+   port: 7001
+spring:
+   application:
+      name: config-server
+   cloud:
+      config:
+         server:
+            git:
+               uri: https://github.com/xuting0522/project.git
+               search-paths: configs-dir
+               username: xuting0522
+               password: qingaideni00
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://localhost:8761/eureka/
